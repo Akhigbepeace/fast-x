@@ -26,7 +26,9 @@ const Navbar = () => {
   const router = useLocation()
   return (
     <Flex alignItems="center" justifyContent="space-between" p="35px 120px">
-      <Image src={logo} alt="logo" />
+      <Link href="/">
+        <Image src={logo} alt="logo" />
+      </Link>
 
       <Box>
         {navlinks.map((navlink, index) => {
@@ -75,5 +77,4 @@ const Navbar = () => {
     </Flex>
   )
 }
-
 export default Navbar
